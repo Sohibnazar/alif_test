@@ -43,7 +43,7 @@ class ProductList:
                     break
 
         def delete_product(self, name):
-            """Удаляет товар по имени."""
+            """Удаляет товар по имени. """
             self.products = [product for product in self.products if product.name != name]
             self.save_products()
 
