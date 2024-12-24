@@ -6,7 +6,7 @@ class Product:
     def __str__(self):
         return f"{self.name} — {self.price}"
 
-    class ProductList:
+class ProductList:
         def __init__(self, filename):
             self.filename = filename
             self.products = self.load_products()
@@ -50,3 +50,4 @@ class Product:
         def subtract_total(self):
             """Вычисляет общую сумму цен всех товаров."""
             return sum(product.price for product in self.products)
+
